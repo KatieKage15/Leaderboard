@@ -1,7 +1,9 @@
 require 'bundler'
+require 'pry'
+require 'nokogiri'
+require 'open-uri'
 
 Bundler.require
-require 'open-uri'
 
 module Concerns
 end

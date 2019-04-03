@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'victorious-messaging-4309'"]
   spec.email         = ["'wildayk@gmail.com'"]
 
-  spec.summary       = %q{Write a short summary, because RubyGems requires one.}
+  spec.summary       = %q{User will enter workout and return athletes/scores.}
   spec.homepage      = "https://github.com/KatieKage15/leaderboard"
   spec.license       = "MIT"
 
@@ -37,4 +37,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry"
+
+  spec.add_dependency "nokogiri"
 end

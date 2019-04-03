@@ -1,8 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
-require 'pry'
-
-
 require_relative '../lib/leaderboard/athlete.rb'
 require_relative '../lib/leaderboard/workout.rb'
 
