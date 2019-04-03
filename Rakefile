@@ -1,8 +1,9 @@
 require "bundler/gem_tasks"
 task :default => :spec
+require_relative './config/envinronment'
 
 def reload!
-  load '.leaderboard/lib'
+  load_all './leaderboard/lib'
 end
 
 task :console do
