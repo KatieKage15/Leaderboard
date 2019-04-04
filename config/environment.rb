@@ -1,11 +1,20 @@
-require 'bundler'
 require 'pry'
-require 'nokogiri'
-require 'open-uri'
+require 'nokogiri' #parse data and put it into a user friendly format
+require 'open-uri' #opens webpage
 
 Bundler.require
 
-module Concerns
-end
+class Environment
+  def run
+    puts "Hi!"
+    puts "What workout would you like to choose?"
+    Scraper.scrape_workout
+    display_workouts
+  end
 
-require_all './lib'
+  def display_workouts
+    Leaderboard.all.each.with_index() do |leaderboard, |
+      puts "#{}, #{leaderboard.workout}"
+    end
+  end
+end
